@@ -1,0 +1,208 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "demo de atuadores",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "light_on",
+                    "slots": [
+                        {
+                            "name": "light_color",
+                            "type": "LIGHT_COLOR"
+                        }
+                    ],
+                    "samples": [
+                        "acender o led {light_color}",
+                        "ligar o led {light_color}",
+                        "ligar a luz {light_color}",
+                        "acender a luz {light_color}"
+                    ]
+                },
+                {
+                    "name": "light_off",
+                    "slots": [
+                        {
+                            "name": "light_color",
+                            "type": "LIGHT_COLOR"
+                        }
+                    ],
+                    "samples": [
+                        "desligar a luz {light_color}",
+                        "apagar a luz {light_color}",
+                        "desligar o led {light_color}",
+                        "apagar o led {light_color}"
+                    ]
+                },
+                {
+                    "name": "lights_on",
+                    "slots": [
+                        {
+                            "name": "light_color_a",
+                            "type": "LIGHT_COLOR"
+                        },
+                        {
+                            "name": "light_color_b",
+                            "type": "LIGHT_COLOR"
+                        },
+                        {
+                            "name": "light_color_c",
+                            "type": "LIGHT_COLOR"
+                        }
+                    ],
+                    "samples": [
+                        "acender as luzes {light_color_a} e {light_color_b} e {light_color_c}",
+                        "ligar as luzes {light_color_a} e {light_color_b} e {light_color_c}",
+                        "acender as luzes {light_color_a} e {light_color_b}",
+                        "ligar as luzes {light_color_a} e {light_color_b}"
+                    ]
+                },
+                {
+                    "name": "lights_off",
+                    "slots": [
+                        {
+                            "name": "light_color_a",
+                            "type": "LIGHT_COLOR"
+                        },
+                        {
+                            "name": "light_color_b",
+                            "type": "LIGHT_COLOR"
+                        },
+                        {
+                            "name": "light_color_c",
+                            "type": "LIGHT_COLOR"
+                        }
+                    ],
+                    "samples": [
+                        "desligar as luzes {light_color_a} e {light_color_b}",
+                        "desligar as luzes {light_color_a} e {light_color_b} e {light_color_c}",
+                        "apagar as luzes {light_color_a} e {light_color_b} ",
+                        "apagar as luzes {light_color_a} e {light_color_b} e {light_color_c}"
+                    ]
+                },
+                {
+                    "name": "all_lights_on",
+                    "slots": [],
+                    "samples": [
+                        "acender todas as luzes",
+                        "ligar todas as luzes"
+                    ]
+                },
+                {
+                    "name": "all_lights_off",
+                    "slots": [],
+                    "samples": [
+                        "desligar todas as luzes",
+                        "apagar todas as luzes"
+                    ]
+                },
+                {
+                    "name": "register_favorite_color",
+                    "slots": [],
+                    "samples": [
+                        "salvar a minha cor preferida",
+                        "decorar a minha cor preferida",
+                        "lembrar a minha cor favorita",
+                        "lembrar a minha cor preferida"
+                    ]
+                },
+                {
+                    "name": "color_name",
+                    "slots": [
+                        {
+                            "name": "light_color",
+                            "type": "LIGHT_COLOR"
+                        }
+                    ],
+                    "samples": [
+                        "{light_color}"
+                    ]
+                },
+                {
+                    "name": "favorite_color_on",
+                    "slots": [],
+                    "samples": [
+                        "acender minha luz preferida",
+                        "ligar a minha luz preferida"
+                    ]
+                },
+                {
+                    "name": "forget_favorite_color",
+                    "slots": [],
+                    "samples": [
+                        "Remover minha luz preferida",
+                        "Esquecer minha luz preferida"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "beleza",
+                        "ok",
+                        "posso",
+                        "sim"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "não"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIGHT_COLOR",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "amarela",
+                                "synonyms": [
+                                    "amarelo"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "verde"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vermelha",
+                                "synonyms": [
+                                    "vermelho"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SCENE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "natal"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
