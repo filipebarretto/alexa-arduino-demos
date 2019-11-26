@@ -263,7 +263,7 @@ class TurnOnFavoriteColorHandler(AbstractRequestHandler):
         logger.info("In TurnOnFavoriteColorHandler")
         
         attr = handler_input.attributes_manager.session_attributes
-        favorite_color = attr["favorite_color"] or ""
+        favorite_color = attr.get("favorite_color", "")
         
         response_builder = handler_input.response_builder
         
@@ -327,7 +327,7 @@ class NoDefineFavoriteColorHandler(AbstractRequestHandler):
         attr["state"] = ""
         
         response_builder = handler_input.response_builder
-        rsp = random.choice(data.WHICH_FAVORITE_COLOR)
+        rsp = random.choice(data.NO_DEFINED_FAVORITE_LIGHT)
         response_builder.speak(rsp)
         response_builder.ask(rsp)
         
@@ -468,6 +468,9 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         
         speech = "Ops! Tivemos um problema. Você pode repetir?"
         handler_input.response_builder.speak(speech).ask(speech)
+        
+        attr = handler_input.attributes_manager.session_attributes
+        attr["state"] = ""
         
         return handler_input.response_builder.response
 

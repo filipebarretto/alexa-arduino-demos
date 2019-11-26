@@ -106,7 +106,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "853202365172-alexa-arduino-actuators-demo-dev",
-          "S3Key": "serverless/alexa-arduino-actuators-demo/dev/1574737117349-2019-11-26T02:58:37.349Z/actuators_alexa_handler.zip"
+          "S3Key": "serverless/alexa-arduino-actuators-demo/dev/1574742204034-2019-11-26T04:23:24.034Z/actuators_alexa_handler.zip"
         },
         "FunctionName": "alexa-arduino-actuators-demo-dev-actuators_alexa_handler",
         "Handler": "src/actuators_alexa_handler.lambda_handler",
@@ -131,14 +131,14 @@
         "ActuatorsUnderscorealexaUnderscorehandlerLogGroup"
       ]
     },
-    "ActuatorsUnderscorealexaUnderscorehandlerLambdaVersionbjU2V0YlafyeaiBSueyIAZ69ZSzMzfWXaRe6yb5yrk": {
+    "ActuatorsUnderscorealexaUnderscorehandlerLambdaVersionNED4tGwAax2stjD8xkQVR16yjbu57g1JmGIwagbIgY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ActuatorsUnderscorealexaUnderscorehandlerLambdaFunction"
         },
-        "CodeSha256": "2F3+0/SSdWHNfbHEVycv6i/Vnz7lOSxkq0ogh40ScL8=",
+        "CodeSha256": "CUsFhpDVFTmJ9cFk6fx9jonwD99mm/558O7yCvmTakc=",
         "Description": "Controls Alexa responses for arduino actuators demo"
       }
     },
@@ -229,7 +229,7 @@
     "ActuatorsUnderscorealexaUnderscorehandlerLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ActuatorsUnderscorealexaUnderscorehandlerLambdaVersionbjU2V0YlafyeaiBSueyIAZ69ZSzMzfWXaRe6yb5yrk"
+        "Ref": "ActuatorsUnderscorealexaUnderscorehandlerLambdaVersionNED4tGwAax2stjD8xkQVR16yjbu57g1JmGIwagbIgY"
       }
     }
   }
